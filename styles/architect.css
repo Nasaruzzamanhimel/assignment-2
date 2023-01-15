@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap');
+/* header styles */
+.header {
+    font-family: 'Work Sans';
+    display: grid;
+    justify-content: center;
+    width: 1920px;
+    height: 1322px;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+
+.web-title {
+    padding: 5px 0 0 240px;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+nav div {
+    margin-right: 240px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #424242;
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.architect {
+    display: grid;
+    justify-content: center;
+}
+
+.architect-title {
+    padding: 0 529px 0;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+.architect-description {
+    margin-top: 0;
+    padding: 0 526px 32px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #727272;
+}
+
+.btn {
+    border: 0;
+    border-radius: 8px;
+    width: 180px;
+    height: 64px;
+    margin: 0 870px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+}
+
+.architect-img {
+    border: 0;
+    border-radius: 8px;
+    padding: 50px 240px 45px;
+    width: 1440px;
+    height: 650px;
+}
+
+/* responsive of header part */
+
+@media screen and (max-width:576px) {  
+    .header{
+        width: 100%;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    nav div {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    
+}
+
+
+/* Quick list of Our Features */
+
+main {
+    width: 1920px;
+    font-family: 'Work Sans';
+}
+
+.container {
+    margin: 85px 301px 130px;
+    display: flex;
+    gap: 73px;
+    justify-content: center;
+
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 24px;
+}
+
+.img-container img {
+    width: 342px;
+    height: 342px;
+}
+
+.features {
+    padding: 202px 0 202px;
+}
+
+.features-title {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.features-descriptions {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.features-btn {
+    border: 0;
+    border-radius: 8px;
+    width: 180px;
+    height: 64px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+}
+
+/* those features what you will enjoy */
+
+.feat-container {
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+    margin-left: 240px;
+    margin-right: 240px;
+    height: 1059px;
+}
+
+.feat-box {
+    width: 586px;
+    height: 982px;
+}
+
+.feat-title {
+    border-left: 5px solid #FF900E;
+    padding: 0 152px 24px 21px;
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.feat-points {
+    margin-top: 20px;
+    padding: 15px 42px 17px 20px;
+    box-shadow: 3px 3px 8px 3px #888888;
+}
+
+.feat {
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.experience {
+    width: 800px;
+    height: 1059px;
+    background-image: url(../images/architect.png);
+    background-size: 708px 982px;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+}
+
+.exp-btn {
+    border: 0;
+    border-radius: 6px;
+    background-color: #FF900E;
+    color: white;
+    width: 300px;
+    height: 150px;
+    margin-top: 869px;
+    margin-right: 150px;
+    text-align: center;
+}
+
+/* services we provide/ extra part */
+
+.service-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.service-container{
+    display: flex;
+    gap: 50px;
+    margin: 0 240px 100px;
+}
+.service{
+    margin-bottom: 30px;
+}
+.service h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/* our facts styles */
+
+.facts {
+    margin: 0 240px;
+}
+
+.facts>h3 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.facts>p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.awards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 124px;
+}
+
+.awards button {
+    margin-top: 100px;
+    width: 240px;
+    height: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 45px 35px;
+}
+
+.awards button:hover {
+    transform: rotate(90deg);
+}
+
+.numbers {
+    margin: 0;
+    font-weight: 700;
+    font-size: 35px;
+}
+.letters{
+    margin: 0;
+}
+
+/* sponsors sections */
+.sponsors {
+    margin: 0 690px 50px;
+    width: 542px;
+    height: 129px;
+    padding-top: 150px;
+}
+
+.sponsors-title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+}
+
+.sponsors-description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sponsors-name {
+    height: 200px;
+    margin: 0 240px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* footer sections */
+
+.footer{
+    width: 1920px;
+    text-align: center;
+    margin: 0;
+   
+}
+.footer div{
+    margin: 0 240px;
+    padding: 39px 410px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    height: 50px;
+    margin-bottom: 400px;
+}
+.footer div p{
+    font-weight: 500;
+font-size: 20px;
+text-align: center;
+color: #424242;
+}
+
+
